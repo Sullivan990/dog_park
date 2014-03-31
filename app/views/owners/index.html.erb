@@ -1,0 +1,8 @@
+<h1>Local Dog Owners</h1>
+<div>
+<ul>
+  <% @owners.each do |owner| %>
+    <li><%= link_to "#{owner.first_name} #{owner.last_name}", owner %></li>
+  <% end %>
+</ul>
+</div>
