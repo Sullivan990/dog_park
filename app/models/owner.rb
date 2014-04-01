@@ -5,7 +5,7 @@ class Owner < ActiveRecord::Base
   validates :dog_name, presence: true
 
 
-  def full_name(owner)
-    owner.first_name + ' ' + owner.last_name
+  def full_name
+    first_name + ' ' + last_name
   end
 end

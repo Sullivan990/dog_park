@@ -1,5 +1,5 @@
 DogPark::Application.routes.draw do
 
-  resources :owners
+  resources :owners, only: [:index, :show, :new, :create]
 
 end

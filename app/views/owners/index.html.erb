@@ -2,7 +2,10 @@
 <div>
 <ul>
   <% @owners.each do |owner| %>
-    <li><%= link_to "#{owner.first_name} #{owner.last_name}", owner %></li>
+    <li><%= link_to "#{owner.full_name}", owner %></li>
   <% end %>
+  <br>
+  <p><%= link_to "Register", new_owner_path %></p>
 </ul>
 </div>
+
